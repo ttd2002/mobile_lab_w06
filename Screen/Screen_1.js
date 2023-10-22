@@ -9,13 +9,13 @@ const Screen_1 = () => {
         <View style={styles.container}>
             <FlatList
                 data={[
-                    { imagePro: require('../images/ca_nau_lau.png'), decription: 'Ca nấu lẩu, nấu mì mini', shop: 'Devang' },
-                    { imagePro: require('../images/ga_bo_toi.png'), decription: 'Ca nấu lẩu, nấu mì mini', shop: 'Devang' },
-                    { imagePro: require('../images/xa_can_cau.png'), decription: 'Ca nấu lẩu, nấu mì mini', shop: 'Devang' },
-                    { imagePro: require('../images/do_choi_dang_mo_hinh.png'), decription: 'Ca nấu lẩu, nấu mì mini', shop: 'Devang' },
-                    { imagePro: require('../images/lanh_dao_gian_don.png'), decription: 'Ca nấu lẩu, nấu mì mini', shop: 'Devang' },
-                    { imagePro: require('../images/hieu_long_con_tre.png'), decription: 'Ca nấu lẩu, nấu mì mini', shop: 'Devang' },
-                    { imagePro: require('../images/trump 1.png'), decription: 'Ca nấu lẩu, nấu mì mini', shop: 'Devang' },
+                    { imagePro: require('../images/ca_nau_lau.png'), decription: 'Ca nấu lẩu, nấu mì mini..', shop: 'Devang' },
+                    { imagePro: require('../images/ga_bo_toi.png'), decription: '1KG KHÔ GÀ BƠ TỎI...', shop: 'LTD Food' },
+                    { imagePro: require('../images/xa_can_cau.png'), decription: 'Xe cần cẩu đa năng', shop: 'Thế giới dồ chơi' },
+                    { imagePro: require('../images/do_choi_dang_mo_hinh.png'), decription: 'Đồ chơi dạng mô hình', shop: 'Thế giới dồ chơi' },
+                    { imagePro: require('../images/lanh_dao_gian_don.png'), decription: 'Lãnh đạo giản đơn', shop: 'Minh Long Book' },
+                    { imagePro: require('../images/hieu_long_con_tre.png'), decription: 'Hiểu lòng trẻ con', shop: 'Minh Long Book' },
+                    { imagePro: require('../images/trump 1.png'), decription: 'Donal Trump Thiên tài lãnh đạo', shop: '...' },
 
                 ]}
                 renderItem={({ item }) => <View style={styles.Product_container}>
@@ -37,11 +37,14 @@ const Screen_1 = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingTop: 22,
     },
     Product_container: {
+        borderBottomWidth: '1px',
+        borderColor: 'grey',
+        marginVertical: 5,
         flexDirection: 'row',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
+        
     },
     imageProduct: {
 
